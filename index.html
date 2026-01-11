@@ -9,7 +9,7 @@
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-  <!-- Favicon: all-browser compatible -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/wbitcoinnetwork/Favicon/main/Favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/wbitcoinnetwork/Favicon/main/Favicon.png">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/wbitcoinnetwork/Favicon/main/Favicon.ico">
@@ -24,7 +24,11 @@
       --accent-hover: #a78bff;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -40,7 +44,7 @@
       width: 100%;
       padding: 1.5rem 5%;
       display: flex;
-      justify-content: center; /* Center logo since no nav */
+      justify-content: center;
       align-items: center;
       z-index: 1000;
       backdrop-filter: blur(10px);
@@ -80,7 +84,6 @@
       gap: 2rem;
       max-width: 1400px;
       margin: 0 auto;
-      background: var(--bg);
     }
 
     .card {
@@ -110,7 +113,6 @@
     }
 
     .card h3 {
-      color: var(--text);
       margin-bottom: 1rem;
       font-size: 1.8rem;
     }
@@ -136,20 +138,22 @@
     .footer-logo img {
       height: 100%;
       width: auto;
-      object-fit: contain;
     }
 
-    footer p { color: #666; }
+    footer p {
+      color: #666;
+    }
 
     @media (max-width: 768px) {
-      .logo-text { font-size: 1.5rem; }
-      .logo-container { gap: 10px; }
+      .logo-text {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with logo only -->
+  <!-- Header -->
   <header>
     <div class="logo-container">
       <div class="logo">
@@ -159,10 +163,11 @@
     </div>
   </header>
 
-  <!-- Services Section -->
+  <!-- Services -->
   <section class="services">
 
-    <a href="https://basescan.org/token/0x4FA2e41D58eCcEf2b2559E120b866252ce8263eF"
+    <!-- Smart Contracts (BSCScan) -->
+    <a href="https://bscscan.com/token/0x0a04ec3cab7de3d859910e7d872b1d8433b5083a"
        target="_blank" rel="noopener noreferrer"
        class="card">
       <i class="fas fa-file-contract"></i>
@@ -173,6 +178,7 @@
       </p>
     </a>
 
+    <!-- Supply -->
     <a href="https://www.wbtcscan.com/"
        target="_blank" rel="noopener noreferrer"
        class="card">
@@ -184,7 +190,8 @@
       </p>
     </a>
 
-    <a href="https://repo.sourcify.dev/8453/0x4FA2e41D58eCcEf2b2559E120b866252ce8263eF"
+    <!-- Verified Source Code (Sourcify BSC) -->
+    <a href="https://repo.sourcify.dev/56/0x0a04ec3cab7de3d859910e7d872b1d8433b5083a"
        target="_blank" rel="noopener noreferrer"
        class="card">
       <i class="fas fa-shield-halved"></i>
@@ -202,7 +209,7 @@
     <div class="footer-logo">
       <img src="https://raw.githubusercontent.com/wbitcoinnetwork/Favicon/main/Favicon.png" alt="WBTC Logo">
     </div>
-    <p>&copy; 2025 WBTC. All rights reserved.</p>
+    <p>&copy; 2026 Wbitcoin. All rights reserved.</p>
   </footer>
 
 </body>
